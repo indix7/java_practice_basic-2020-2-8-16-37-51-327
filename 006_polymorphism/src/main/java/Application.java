@@ -9,6 +9,16 @@ public class Application {
         pressF5(new Wechat());
     }
     public static void pressF5 (SoftWare softWare) {
+        System.out.println("====================");
+        if (softWare instanceof Intellij) {
+            System.out.println("Intellij");
+        }
+        if (softWare instanceof Chrome) {
+            System.out.println("Chrome");
+        }
+        if (softWare instanceof Wechat) {
+            System.out.println("Wechat");
+        }
         softWare.pressF5();
     }
 }
